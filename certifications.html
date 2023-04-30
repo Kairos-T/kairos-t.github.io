@@ -16,6 +16,13 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+
+<head>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+</head>
+
     </head>
     <body class="d-flex flex-column h-100 bg-light">
         <main class="flex-shrink-0">
@@ -57,24 +64,60 @@
                             <!-- Certification 1-->
                             <div class="card shadow border-0 rounded-4 mb-5">
                                 <div class="card-body p-5">
-                                    <div class="row align-items-center gx-5">
-                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                                            <div class="bg-light p-4 rounded-4">
-                                                <div class="text-primary fw-bolder mb-2">2022</div>
-                                                <div class="small fw-bolder">Student Researcher</div>
-                                                <div class="small text-muted">Commonwealth Secondary School</div>
-                                                <div class="small text-muted">STEM Elective Programme Capstone Project</div>
+                                  <div class="row align-items-center gx-5">
+                                    <div class="col-lg-12 mb-4 mb-lg-0">
+                                      <div class="bg-light p-4 rounded-4">
+                                        <div id="certificate-gallery" class="carousel slide" data-bs-ride="carousel">
+                                          <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                              <div class="text-primary fw-bolder mb-2">Cisco Networking Essentials</div>
+                                              <img class="img-fluid" src="assets/Networking Essentials.png" alt="Networking Essentials" />
                                             </div>
+                                            <div class="carousel-item">
+                                              <div class="text-primary fw-bolder mb-2">Cisco Cybersecurity Essentials</div>
+                                              <img class="img-fluid" src="assets/Cybersecurity Essentials.png" alt="Cybersecurity Essentials" />
+                                            </div>
+                                            <div class="carousel-item">
+                                              <div class="text-primary fw-bolder mb-2">Cisco Python Essentials 1</div> 
+                                              <img class="img-fluid" src="assets/Python Essentials 1.png" alt="Python Essentials 1" />
+                                            </div>
+                                          </div>
+                                          <button class="carousel-control-prev" type="button" data-bs-target="#certificate-gallery" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                          </button>
+                                          <button class="carousel-control-next" type="button" data-bs-target="#certificate-gallery" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                          </button>
                                         </div>
-                                        <div class="col-lg-8"><div> <ul>
-                                            <li>Individual research Project on the Correlation Between Degradability of Plastic and its Tensile Strength</li>
-                                            <li>Utilised Microsoft Excel to streamline data collection, organisation and analysis for more accurate and comprehensive findings</li>
-                                            <li>Presented research findings through oral and poster presentations to school leaders, the student body and the wider public at the CWSS open house event</li>
-                                        </ul></div></div>
+                                      </div>
                                     </div>
+                                    <div class="col-lg-12">
+                                      <div> 
+                                        <p>VishwaCTF was my first ever synchronous CTF that I have attended, and I had an amazing experience!
+                                          Being rather new to cybersecurity, I didn't manage to capture many flags. However, the experience 
+                                          was really rewarding, and I learnt a lot about identifying different types of cyber attacks!</p>
+                                      </div>
+                                    </div>
+                                  </div>
                                 </div>
-                            </div>
-
+                              </div>
+                              
+                              <style>
+                                #certificate-gallery {
+                                  width: 100%;
+                                }
+                                .carousel-item {
+                                  height: auto;
+                                }
+                                .card-body {
+                                  display: flex;
+                                  flex-wrap: wrap;
+                                }
+                              </style>
+                              
+                            
                             <!-- Experience Card 2-->
                             <div class="card shadow border-0 rounded-4 mb-5">
                                 <div class="card-body p-5">
