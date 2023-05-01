@@ -11727,3 +11727,7 @@ html {
         font-size: 35px;
     }
 
+    .card-body img {
+      max-width: 100%;
+      height: auto;
+    }
