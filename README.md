@@ -1,3 +1,2 @@
 # KairosWeb
-Personal [Website](https://kairos-t.github.io/) built with HTML and CSS with Bootstrap
-- With a small easter egg :D, try to find it without checking my scripts :P
+Personal Branding Website (Portfolio) built with HTML, CSS, a little bit of JS and using Bootstrap. Hidden easter egg somewhere! Try to find it without using inspect element or looking at my source code :P
