@@ -1,3 +1,4 @@
+
 $(document).ready(function(){
   $('#certificate-gallery1').slick({
     dots: true,
@@ -41,3 +42,4 @@ $(document).ready(function(){
     adaptiveHeight: true
   });
 });
+
