@@ -115,9 +115,9 @@
                                   flex-wrap: wrap;
                                 }
                                 .carousel-control-prev-icon,
-.carousel-control-next-icon {
-  filter: invert(1);
-}
+                                .carousel-control-next-icon {
+                                filter: invert(1);
+                                }
                               </style>
                               
                             
@@ -144,6 +144,63 @@
                         <!-- Events-->
                         <section>
                             <h2 class="text-muted fw-bolder mb-4">Events</h2>
+
+                            <!-- Event Card 1-->
+                            <div class="card shadow border-0 rounded-4 mb-5">
+                              <div class="card-body p-5">
+                                <div class="row align-items-center gx-5">
+                                  <div class="col-lg-12 text-center mb-4 mb-lg-0">
+                                    <div class="bg-light p-4 rounded-4">
+                                      <div class="text-primary fw-bolder mb-2 text-start">Magnet User Summit CTF - Magnet Forensics</div>
+                                      <div id="magnet-gallery" class="carousel slide" data-bs-ride="carousel">
+                                        <div class="carousel-inner">
+                                          <div class="carousel-item active">
+                                            <img class="img-fluid mb-3" src="assets/magnetforensicsctf.jpg" alt="Magnet Forensics" />
+                                          </div>
+                                          <div class="carousel-item">
+                                            <img class="img-fluid mb-3" src="assets/spectrogram.png" alt="Wav Spectrogram" />
+                                          </div>
+                                          <div class="carousel-item">
+                                            <img class="img-fluid mb-3" src="assets/scoreboard.png" alt="Score" />
+                                          </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#magnet-gallery" data-bs-slide="prev">
+                                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                          <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#magnet-gallery" data-bs-slide="next">
+                                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                          <span class="visually-hidden">Next</span>
+                                        </button>
+                                      </div>
+                                      <div class="text-start">
+                                        <p>As a cybersecurity enthusiast, I participated in the Magnet User Summit CTF hosted by Magnet Forensics. The event provided me with an opportunity to apply my knowledge and skills to solve various security challenges and network with like-minded professionals. I was thrilled to be part of the winning team and received a prize for my contribution. The experience helped me gain practical experience and develop my problem-solving skills in the field of cybersecurity.</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            
+                            <style>
+                              #magnet-gallery {
+                                width: 100%;
+                              }
+                              .carousel-item {
+                                height: auto;
+                              }
+                              .card-body {
+                                display: flex;
+                                flex-wrap: wrap;
+                              }
+                              .carousel-control-prev-icon,
+                              .carousel-control-next-icon {
+                                filter: invert(1);
+                              }
+                            </style>
+                            
+
+                            
                             <!-- Event Card 1-->
                             <div class="card shadow border-0 rounded-4 mb-5">
                                 <div class="card-body p-5">
