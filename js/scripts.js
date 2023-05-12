@@ -43,3 +43,13 @@ $(document).ready(function(){
   });
 });
 
+$(document).ready(function(){
+  $('#certificate-gallery5').slick({
+    dots: true,
+    arrows: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    adaptiveHeight: true
+  });
+});
