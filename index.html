@@ -65,7 +65,29 @@
                                 </button>
 
                                 <div class="fade-in fs-3 fw-light text-muted"><strong>Hestia Kairos Tay's Portfolio</strong></div>
-                                <h1 class="fade-in display-3 fw-bolder mb-5"><span class="text-gray d-inline">&lt;Hi! Welcome to my page/&gt;</span></h1>
+                                <h1 id="typing-effect" class="fade-in display-3 fw-bolder mb-5">
+
+                                  </h1>
+
+                                  <script>
+                                    var text = "<Hi! Welcome to my page/>";
+                                    var index = 0;
+
+                                    function typeEffect() {
+                                      var element = document.getElementById("typing-effect");
+                                      if (index < text.length) {
+                                        element.innerHTML += text.charAt(index);
+                                        index++;
+                                        setTimeout(typeEffect, 80);
+                                      }
+                                    }
+
+                                    window.onload = typeEffect;
+                                  </script>
+
+
+
+
                                 <div class="fade-in d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
                                 <a class="fade-in btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="resume.html">Resume</a>
                                 <a class="fade-in btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder" href="https://cyberbits.kairostay.com">Cybersecurity Blog</a>
@@ -202,6 +224,11 @@
                         <div class="col-xxl-8">
                             <div class="text-center my-5">
                                 <h2 class="display-5 fw-bolder"><span class="text-black d-inline">About Me</span></h2>
+                                <script>
+
+
+                                </script>
+
                                 <p class="lead fw-light mb-4"> <strong> Hi! I'm Hestia (AKA Kairos), a Cybersecurity & Digital Forensics student at Ngee Ann Polytechnic. </strong></p>
                                 <p class="text-muted">I'm a passionate Python programmer with a focus on cybersecurity and AI. I have worked on various projects in these fields and also participated in some CTFs and AI Hackathons! <br> I am constantly seeking to upskill myself - whether it's through online courses or workshops, I'm always looking for ways to expand my knowledge, staying up-to-date with the latest trends and technologies. <br> Feel free to connect with me if our spheres of interest intersect!  </p>
                                 <div class="d-flex justify-content-center fs-2 gap-4">
