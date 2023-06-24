@@ -54,7 +54,7 @@ $(document).ready(function(){
   });
 });
 
-// Select the elements with the "fade-in" class
+
 const elements = document.querySelectorAll('.fade-in');
 
 // Create an intersection observer instance
