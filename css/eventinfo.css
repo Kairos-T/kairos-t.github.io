@@ -1,0 +1,48 @@
+.image-container {
+    width: 100%;
+    height: 0;
+    padding-bottom: 75%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .image-container img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%; /* Adjust the value to make the image smaller */
+    height: auto; /* Maintain the aspect ratio */
+  }
+
+
+  #certificate-gallery {
+    width: 100%;
+  }
+
+  .carousel-item {
+    height: auto;
+  }
+
+  .card-body {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    filter: invert(1);
+  }
+
+  #psb-gallery {
+    width: 100%;
+  }
+
+  #magnet-gallery {
+    width: 100%;
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    filter: invert(1);
+  }
