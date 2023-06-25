@@ -14,3 +14,34 @@
     max-width: 100%;
     max-height: 100%;
   }
+
+  #certificate-gallery {
+    width: 100%;
+}
+
+.carousel-item {
+    height: auto;
+}
+
+.card-body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1);
+}
+
+#psb-gallery {
+    width: 100%;
+}
+
+#magnet-gallery {
+    width: 100%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1);
+}
