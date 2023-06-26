@@ -13,7 +13,7 @@
 @media (max-width: 576px) {
     .container {
         padding-left: 20px;
-        padding-right: 20px; 
+        padding-right: 20px;
     }
 }
 
@@ -30,8 +30,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 50%; /* Adjust the value to make the image smaller */
-    height: auto; /* Maintain the aspect ratio */
+    width: 100%;
+    height: auto;
   }
 
 
