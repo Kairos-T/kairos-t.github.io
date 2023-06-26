@@ -11735,3 +11735,11 @@ html {
       100% { opacity: 1; } /* Fade-in ends with 100% opacity */
     }
 
+    #stem-gallery {
+      width: 100%;
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+      filter: invert(1);
+  }
