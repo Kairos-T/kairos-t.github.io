@@ -21,7 +21,24 @@
 </head>
 <body class="d-flex flex-column h-100 bg-light">
 <main class="flex-shrink-0">
+  <style>
+    .card-link {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+  }
 
+  .card-link:hover .card {
+      transform: translateY(-7px) scale(1.02);
+      color: #000;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      transition-delay: 0.1s;
+  }
+
+  .card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+</style>
 
   <!-- Navigation-->
   <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
@@ -50,70 +67,66 @@
                         <!-- Certifications Section-->
                         <section>
                           <div class="d-flex align-items-center justify-content-between mb-4">
-                              <h2 class="text-muted fw-bolder mb-0 fade-in">Certifications</h2>
+                            <h2 class="text-muted fw-bolder mb-0 fade-in">Certifications</h2>
                           </div>
 
                           <div class="row">
-
-                              <!-- Certification Cisco -->
-                              <div class="col-lg-6 mb-5 fade-in">
-                                  <div class="card shadow border-0 rounded-4">
-                                      <div class="card-body p-5">
-                                          <div class="bg-light p-4 rounded-4">
-                                              <div id="certificate-gallery" class="carousel slide" data-bs-ride="carousel">
-                                                  <div class="carousel-inner">
-                                                      <div class="carousel-item active">
-                                                          <div class="text-primary fw-bolder mb-2">Cisco Networking Essentials</div>
-                                                          <img class="img-fluid" src="assets/Networking Essentials.jpg" alt="Networking Essentials" />
-                                                      </div>
-                                                      <div class="carousel-item">
-                                                          <div class="text-primary fw-bolder mb-2">Cisco Cybersecurity Essentials</div>
-                                                          <img class="img-fluid" src="assets/Cybersecurity Essentials.jpg" alt="Cybersecurity Essentials" />
-                                                      </div>
-                                                      <div class="carousel-item">
-                                                          <div class="text-primary fw-bolder mb-2">Cisco Python Essentials 1</div>
-                                                          <img class="img-fluid" src="assets/Python Essentials 1.jpg" alt="Python Essentials 1" />
-                                                      </div>
-                                                  </div>
-                                                  <button class="carousel-control-prev" type="button" data-bs-target="#certificate-gallery" data-bs-slide="prev">
-                                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                                      <span class="visually-hidden">Previous</span>
-                                                  </button>
-                                                  <button class="carousel-control-next" type="button" data-bs-target="#certificate-gallery" data-bs-slide="next">
-                                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                                      <span class="visually-hidden">Next</span>
-                                                  </button>
-                                              </div>
-                                              <div class="text-start">
-                                                  <p>In my free time, I enjoy exploring various online courses to expand my knowledge and skills.
-                                                     I completed the Cisco Networking Essentials course, which provided me with a deeper
-                                                     understanding of computer networks, Cybersecurity Essentials
-                                                     which taught me how to identify common cyber threats and the Cisco Python Essentials course, which gave me
-                                                     a solid foundation in programming with Python. These courses have helped me enhance my technical
-                                                       abilities and opened up new opportunities for me.</p>
-                                              </div>
+                            <!-- Certification Cisco -->
+                            <div class="col-lg-6 mb-5 fade-in">
+                              <a href="cisco.html" class="card-link">
+                                <div class="card shadow border-0 rounded-4">
+                                  <div class="bg-light p-4 rounded-4">
+                                    <div id="certificate-gallery" class="carousel slide" data-bs-ride="carousel">
+                                      <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                          <div class="text-primary fw-bolder mb-2">Cisco Networking Essentials</div>
+                                          <div class="image-container">
+                                            <img class="img-fluid" src="assets/Networking Essentials.jpg" alt="Networking Essentials" />
                                           </div>
-                                      </div>
-                                  </div>
-                              </div>
-
-                              <!-- Literacy in AI -->
-                              <div class="col-lg-6 mb-5 fade-in">
-                                  <div class="card shadow border-0 rounded-4">
-                                      <div class="card-body p-5">
-                                          <div class="text-center mb-4 mb-lg-0">
-                                              <div class="bg-light p-4 rounded-4">
-                                                  <div class="text-primary fw-bolder mb-2 text-start">Literacy in AI - AI Singapore</div>
-                                                  <img class="img-fluid mb-3" src="assets/Literacy In AI.png" alt="Literacy in AI" />
-                                                  <div class="text-start">I recently completed the Literacy in AI course offered by AI Singapore, and it was an incredibly enriching experience. The course covered a wide range of topics, from the fundamentals of AI to the ethical considerations surrounding its use. The course was well-structured, which made the learning experience even more enjoyable. Overall, I feel much more confident in my understanding of AI and its potential impact on society.</div>
-                                              </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                          <div class="text-primary fw-bolder mb-2">Cisco Cybersecurity Essentials</div>
+                                          <div class="image-container">
+                                            <img class="img-fluid" src="assets/Cybersecurity Essentials.jpg" alt="Cybersecurity Essentials" />
                                           </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                          <div class="text-primary fw-bolder mb-2">Cisco Python Essentials 1</div>
+                                          <div class="image-container">
+                                            <img class="img-fluid" src="assets/Python Essentials 1.jpg" alt="Python Essentials 1" />
+                                          </div>
+                                        </div>
                                       </div>
+                                      <button class="carousel-control-prev" type="button" data-bs-target="#certificate-gallery" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                      </button>
+                                      <button class="carousel-control-next" type="button" data-bs-target="#certificate-gallery" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                      </button>
+                                    </div>
                                   </div>
-                              </div>
+                                </div>
+                              </a>
+                            </div>
+
+                            <!-- Literacy in AI -->
+                            <div class="col-lg-6 mb-5 fade-in">
+                              <a href="literacyinai.html" class="card-link">
+                                <div class="card shadow border-0 rounded-4">
+                                  <div class="bg-light p-4 rounded-4">
+                                    <div class="text-primary fw-bolder mb-2">Literacy in AI - AI Singapore</div>
+                                    <div class="image-container">
+                                      <img class="img-fluid" src="assets/Literacy In AI.png" alt="Literacy in AI" />
+                                    </div>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
                           </div>
+                        </section>
 
-                      </section>
 
                         <div class="pb-5"></div>
 
@@ -122,11 +135,11 @@
 
                             <h2 class="text-muted fw-bolder mb-4 fade-in">Events</h2>
 
-                              <div class="row">
-                               <!-- PSB CTF-->
-                               <div class="col-lg-6">
-                                <div class="card shadow border-0 rounded-4 mb-5 fade-in">
-                                  <div class="card-body p-5">
+                            <div class="row">
+                              <!-- PSB CTF -->
+                              <div class="col-lg-6">
+                                <a href="psb.html" class="card-link">
+                                  <div class="card shadow border-0 rounded-4 mb-5 fade-in">
                                     <div class="row align-items-center gx-5">
                                       <div class="col-lg-12 text-center mb-4 mb-lg-0">
                                         <div class="bg-light p-4 rounded-4">
@@ -163,120 +176,95 @@
                                               <span class="visually-hidden">Next</span>
                                             </button>
                                           </div>
-                                          <div class="text-start">
-                                            <p>This was a team-based CTF that I attended in May 2023, and it was a great opportunity for me to delve deeper into web exploitation, network analysis, and system hacking.
-                                              One of the most valuable aspects of the competition was the chance to learn and practice using various tools and techniques. Specifically, I gained hands-on experience with
-                                              tools such as nmap, Metasploit, Aircrack-ng, Burp Suite, and SQLmap, which helped me to develop a deeper understanding of their capabilities and how they can be used in
-                                              different scenarios. <br> <br>Overall, participating in this CTF competition was an excellent way for me to gain practical experience in the field of cybersecurity and also develop
-                                              my technical skills.
-                                            </p>
-                                          </div>
                                         </div>
                                       </div>
                                     </div>
                                   </div>
-                                </div>
+                                </a>
                               </div>
 
-                              <!-- Magnet Forensics CTF-->
-
-                          <div class="col-lg-6">
-                            <div class="card shadow border-0 rounded-4 mb-5 fade-in">
-                              <div class="card-body p-5">
-                                <div class="row align-items-center gx-5">
-                                  <div class="col-lg-12 text-center mb-4 mb-lg-0">
-                                    <div class="bg-light p-4 rounded-4">
-                                      <div class="text-primary fw-bolder mb-2 text-start">Magnet User Summit CTF - Magnet Forensics</div>
-                                      <div id="magnet-gallery" class="carousel slide" data-bs-ride="carousel">
-                                        <div class="carousel-inner">
-                                          <div class="carousel-item active">
-                                            <div class="image-container">
-                                              <img class="img-fluid mb-3" src="assets/magnetforensicsctf.jpg" alt="Magnet Forensics" />
+                              <!-- Magnet Forensics CTF -->
+                              <div class="col-lg-6">
+                                <a href="magnet.html" class="card-link">
+                                  <div class="card shadow border-0 rounded-4 mb-5 fade-in">
+                                    <div class="row align-items-center gx-5">
+                                      <div class="col-lg-12 text-center mb-4 mb-lg-0">
+                                        <div class="bg-light p-4 rounded-4">
+                                          <div class="text-primary fw-bolder mb-2 text-start">Magnet User Summit CTF - Magnet Forensics</div>
+                                          <div id="magnet-gallery" class="carousel slide" data-bs-ride="carousel">
+                                            <div class="carousel-inner">
+                                              <div class="carousel-item active">
+                                                <div class="image-container">
+                                                  <img class="img-fluid mb-3" src="assets/magnetforensicsctf.jpg" alt="Magnet Forensics" />
+                                                </div>
+                                              </div>
+                                              <div class="carousel-item">
+                                                <div class="image-container">
+                                                  <img class="img-fluid mb-3" src="assets/wav spectrogram.png" alt="Wav Spectrogram" />
+                                                </div>
+                                              </div>
+                                              <div class="carousel-item">
+                                                <div class="image-container">
+                                                  <img class="img-fluid mb-3" src="assets/score over time.png" alt="Score Over Time" />
+                                                </div>
+                                              </div>
                                             </div>
-                                          </div>
-                                          <div class="carousel-item">
-                                            <div class="image-container">
-                                              <img class="img-fluid mb-3" src="assets/wav spectrogram.png" alt="Wav Spectrogram" />
-                                            </div>
-                                          </div>
-                                          <div class="carousel-item">
-                                            <div class="image-container">
-                                              <img class="img-fluid mb-3" src="assets/score over time.png" alt="Score Over Time" />
-                                            </div>
+                                            <button class="carousel-control-prev" type="button" data-bs-target="#magnet-gallery" data-bs-slide="prev">
+                                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                              <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button" data-bs-target="#magnet-gallery" data-bs-slide="next">
+                                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                              <span class="visually-hidden">Next</span>
+                                            </button>
                                           </div>
                                         </div>
-                                        <button class="carousel-control-prev" type="button" data-bs-target="#magnet-gallery" data-bs-slide="prev">
-                                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                          <span class="visually-hidden">Previous</span>
-                                        </button>
-                                        <button class="carousel-control-next" type="button" data-bs-target="#magnet-gallery" data-bs-slide="next">
-                                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                          <span class="visually-hidden">Next</span>
-                                        </button>
                                       </div>
                                     </div>
-                                    <div class="text-start">
-                                      <p>This was my second-ever synchronous CTF and
-                                        it was a huge improvement from my first experience!
-                                         I learnt so much throughout the event, including
-                                         hands-on experience with audio and image steganography
-                                         using different tools, different ciphers and using
-                                         cipher tools. Additionally, I (very proudly, as a beginner :D)
-                                          was able to solve some challenging Android digital forensics
-                                          problems with ALEAPP and Magnet AXIOM! Surprisingly, I managed to
-                                          clinch top 25%, considering the majority of participants were
-                                           seasoned DFIR professionals.</p>
-                                    </div>
                                   </div>
-                                </div>
+                                </a>
                               </div>
                             </div>
-                          </div>
 
 
+                          <section class="row">
                             <!-- VISHWACTF-->
                             <div class="col-lg-6 mb-5 fade-in">
-                              <div class="card shadow border-0 rounded-4 w-100">
-                                <div class="card-body p-5">
-                                  <div class="text-center mb-4 mb-lg-0">
-                                    <div class="bg-light p-4 rounded-4">
-                                      <div class="text-primary fw-bolder mb-2 text-start">VishwaCTF'23</div>
-                                      <div class="image-container">
-                                        <img class="img-fluid mb-3" src="assets/VishwaCTF.png" alt="VishwaCTF" />
-                                      </div>
-                                      <div class="text-start">VishwaCTF was my first-ever synchronous CTF that I have attended,
-                                        and it was an intriguing experience. Being rather new to cybersecurity,
-                                        I didn't manage to capture many flags. However, the experience was really rewarding,
-                                        and I learned a lot about CTFs as a whole, such as the various types of
-                                        challenges and techniques involved.</div>
+                              <a href="vishwactf.html" class="card-link">
+                                <div class="card shadow border-0 rounded-4 w-100">
+
+                                    <div class="text-center mb-4 mb-lg-0">
+                                      <div class="bg-light p-4 rounded-4">
+                                        <div class="text-primary fw-bolder mb-2 text-start">VishwaCTF'23</div>
+                                        <div class="image-container">
+                                          <img class="img-fluid mb-3" src="assets/VishwaCTF.png" alt="VishwaCTF" />
+                                        </div>
+
                                     </div>
                                   </div>
                                 </div>
-                              </div>
+                              </a>
                             </div>
-
 
                             <!-- GOVR-->
                             <div class="col-lg-6 mb-5 fade-in">
-                              <div class="card shadow border-0 rounded-4 w-100">
-                                <div class="card-body p-5">
-                                  <div class="text-center mb-4 mb-lg-0">
-                                    <div class="bg-light p-4 rounded-4">
-                                      <div class="text-primary fw-bolder mb-2 text-start">Game On With Virtual Reality! NP ApLM</div>
-                                      <div class="image-container">
-                                        <img class="img-fluid mb-3" src="assets/GoVR Certificate.png" alt="GoVR" />
-                                      </div>
-                                      <div class="text-start">During the June holidays in 2022, I had the opportunity to attend GoVR,
-                                        where I gained a wealth of knowledge in Immersive Media. I was able to create my own VR
-                                        game using Unity and experimented with C# programming to develop the game.
-                                        It was an enriching experience that allowed me to explore and develop my skills in virtual reality
-                                        game development.</div>
+                              <a href="govr.html" class="card-link">
+                                <div class="card shadow border-0 rounded-4 w-100">
+
+                                    <div class="text-center mb-4 mb-lg-0">
+                                      <div class="bg-light p-4 rounded-4">
+                                        <div class="text-primary fw-bolder mb-2 text-start">Game On With Virtual Reality! NP ApLM</div>
+                                        <div class="image-container">
+                                          <img class="img-fluid mb-3" src="assets/GoVR Certificate.png" alt="GoVR" />
+                                        </div>
+
                                     </div>
                                   </div>
                                 </div>
-                              </div>
+                              </a>
                             </div>
-                        </section>
+                          </section>
+
                         <!-- Divider-->
                         <div class="pb-5"></div>
                       </main>
