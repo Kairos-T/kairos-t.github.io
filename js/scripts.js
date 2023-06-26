@@ -54,6 +54,28 @@ $(document).ready(function(){
   });
 });
 
+$(document).ready(function(){
+  $('#certificate-gallery6').slick({
+    dots: true,
+    arrows: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    adaptiveHeight: true
+  });
+});
+
+$(document).ready(function(){
+  $('#certificate-gallery7').slick({
+    dots: true,
+    arrows: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    adaptiveHeight: true
+  });
+});
+
 const elements = document.querySelectorAll('.fade-in');
 
 const observer = new IntersectionObserver((entries, observer) => {
