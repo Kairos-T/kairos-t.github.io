@@ -83,6 +83,8 @@ const observer = new IntersectionObserver((entries, observer) => {
     if (entry.isIntersecting) {
       entry.target.classList.add('fade-in');
       observer.unobserve(entry.target);
+    } else {
+      entry.target.classList.add('fade-out');
     }
   });
 });
