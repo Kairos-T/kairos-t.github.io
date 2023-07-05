@@ -1,4 +1,3 @@
-
 $(document).ready(function(){
   $('#certificate-gallery1').slick({
     dots: true,
