@@ -45,3 +45,20 @@
 .carousel-control-next-icon {
     filter: invert(1);
 }
+
+.card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.card-link:hover .card {
+    transform: translateY(-7px) scale(1.02);
+    color: #000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition-delay: 0.05s;
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
