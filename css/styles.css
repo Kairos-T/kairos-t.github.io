@@ -11747,3 +11747,18 @@ html {
   .carousel-control-next-icon {
       filter: invert(1);
   }
+
+/* styles.css */
+#scramble {
+  position: relative;
+  display: inline-block;
+}
+
+@keyframes scrambleAnimation {
+  0%, 100% {
+      content: attr(data-original-text);
+  }
+  30% {
+      content: attr(data-random-text);
+  }
+}
