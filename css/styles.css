@@ -11771,7 +11771,7 @@ html {
   top: 0;
   left: 0;
   z-index: 999999;
-  background: #000;
+  background: #f5f5f5;
 }
 
 .loader {
