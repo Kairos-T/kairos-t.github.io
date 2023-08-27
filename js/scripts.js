@@ -1,3 +1,13 @@
+'use strict';
+
+(function ($) {
+$(window).on('load', function () {
+  $(".loader").fadeOut();
+  $("#preloder").delay(200).fadeOut("slow");
+});
+
+})(jQuery);
+
 $(document).ready(function(){
   $('#certificate-gallery1').slick({
     dots: true,
