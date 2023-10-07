@@ -1,104 +1,103 @@
-'use strict';
+"use strict";
 
 (function ($) {
-$(window).on('load', function () {
-  $(".loader").fadeOut();
-  $("#preloder").delay(200).fadeOut("slow");
-});
-
+  $(window).on("load", function () {
+    $(".loader").fadeOut();
+    $("#preloder").delay(200).fadeOut("slow");
+  });
 })(jQuery);
 
-$(document).ready(function(){
-  $('#certificate-gallery1').slick({
+$(document).ready(function () {
+  $("#certificate-gallery1").slick({
     dots: true,
     arrows: true,
     infinite: true,
     speed: 300,
     slidesToShow: 1,
-    adaptiveHeight: true
+    adaptiveHeight: true,
   });
 });
 
-$(document).ready(function(){
-  $('#certificate-gallery2').slick({
+$(document).ready(function () {
+  $("#certificate-gallery2").slick({
     dots: true,
     arrows: true,
     infinite: true,
     speed: 300,
     slidesToShow: 1,
-    adaptiveHeight: true
+    adaptiveHeight: true,
   });
 });
 
-$(document).ready(function(){
-  $('#certificate-gallery3').slick({
+$(document).ready(function () {
+  $("#certificate-gallery3").slick({
     dots: true,
     arrows: true,
     infinite: true,
     speed: 300,
     slidesToShow: 1,
-    adaptiveHeight: true
+    adaptiveHeight: true,
   });
 });
 
-$(document).ready(function(){
-  $('#certificate-gallery4').slick({
+$(document).ready(function () {
+  $("#certificate-gallery4").slick({
     dots: true,
     arrows: true,
     infinite: true,
     speed: 300,
     slidesToShow: 1,
-    adaptiveHeight: true
+    adaptiveHeight: true,
   });
 });
 
-$(document).ready(function(){
-  $('#certificate-gallery5').slick({
+$(document).ready(function () {
+  $("#certificate-gallery5").slick({
     dots: true,
     arrows: true,
     infinite: true,
     speed: 300,
     slidesToShow: 1,
-    adaptiveHeight: true
+    adaptiveHeight: true,
   });
 });
 
-$(document).ready(function(){
-  $('#certificate-gallery6').slick({
+$(document).ready(function () {
+  $("#certificate-gallery6").slick({
     dots: true,
     arrows: true,
     infinite: true,
     speed: 300,
     slidesToShow: 1,
-    adaptiveHeight: true
+    adaptiveHeight: true,
   });
 });
 
-$(document).ready(function(){
-  $('#certificate-gallery7').slick({
+$(document).ready(function () {
+  $("#certificate-gallery7").slick({
     dots: true,
     arrows: true,
     infinite: true,
     speed: 300,
     slidesToShow: 1,
-    adaptiveHeight: true
+    adaptiveHeight: true,
   });
 });
 
-const elements = document.querySelectorAll('.fade-in');
+const elements = document.querySelectorAll(".fade-in");
 
 const observer = new IntersectionObserver((entries, observer) => {
-  entries.forEach(entry => {
+  entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      entry.target.classList.add('fade-in');
+      entry.target.classList.add("fade-in");
       observer.unobserve(entry.target);
     } else {
-      entry.target.classList.add('fade-out');
+      entry.target.classList.add("fade-out");
     }
   });
 });
 
-elements.forEach(element => {
+elements.forEach((element) => {
   observer.observe(element);
 });
 
@@ -107,7 +106,7 @@ elements.forEach(element => {
 class TextScramble {
   constructor(el) {
     this.el = el;
-    this.chars = '!<>-_\\/[]{}—=+*^?#________';
+    this.chars = "!<>-_\\/[]{}—=+*^?#________";
     this.update = this.update.bind(this);
   }
 
@@ -117,8 +116,8 @@ class TextScramble {
     const promise = new Promise((resolve) => (this.resolve = resolve));
     this.queue = [];
     for (let i = 0; i < length; i++) {
-      const from = oldText[i] || '';
-      const to = newText[i] || '';
+      const from = oldText[i] || "";
+      const to = newText[i] || "";
       const start = Math.floor(Math.random() * 40);
       const end = start + Math.floor(Math.random() * 40);
       this.queue.push({ from, to, start, end });
@@ -130,7 +129,7 @@ class TextScramble {
   }
 
   update() {
-    let output = '';
+    let output = "";
     let complete = 0;
     for (let i = 0, n = this.queue.length; i < n; i++) {
       let { from, to, start, end, char } = this.queue[i];
@@ -161,11 +160,9 @@ class TextScramble {
   }
 }
 
-const el = document.querySelector('#scramble');
+const el = document.querySelector("#scramble");
 const fx = new TextScramble(el);
-const phrases = [
-  'Kairos\' Portfolio'
-];
+const phrases = ["Kairos' Portfolio"];
 
 let isHovered = false; // Track hover state
 let counter = 0;
