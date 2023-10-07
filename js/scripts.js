@@ -184,3 +184,31 @@ const next = () => {
   });
   counter = (counter + 1) % phrases.length;
 };
+
+function setMaxHeight() {
+    const carousel = document.getElementById('testimonialCarousel');
+    const items = carousel.querySelectorAll('.carousel-item');
+
+    let maxHeight = 0;
+    items.forEach(item => {
+        const card = item.querySelector('.card');
+        const cardBody = item.querySelector('.card-body');
+        card.style.height = 'auto';
+        cardBody.style.height = 'auto';
+
+        const itemHeight = card.offsetHeight;
+        if (itemHeight > maxHeight) {
+            maxHeight = itemHeight;
+        }
+    });
+
+    items.forEach(item => {
+        const card = item.querySelector('.card');
+        const cardBody = item.querySelector('.card-body');
+        card.style.height = maxHeight + 'px';
+        cardBody.style.height = '100%';
+    });
+}
+
+window.addEventListener('load', setMaxHeight);
+window.addEventListener('resize', setMaxHeight);
