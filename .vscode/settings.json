@@ -14,5 +14,6 @@
         "SEETF",
         "Skillset",
         "TISC"
-    ]
+    ],
+    "liveServer.settings.port": 5501
 }
